@@ -48,7 +48,8 @@ const BeerItem = ({ item }) => {
     //   <p>{item.name}</p>
     //   <p>{item.style.shortName}</p>
     // </div>
-    <div className="card mb-4">
+    <div className="home-container">
+      <div className='home-card'>
        <div className="embed-responsive">
          <img src={item.labels.medium} />
      </div>
@@ -56,17 +57,18 @@ const BeerItem = ({ item }) => {
          <h4 className="card-title">{item.name}</h4>
          <p className="card-text">{item.style.shortName}</p>
        </div>
+       </div>
      </div>
   );
     } else {
       return (
-        <div class="card mb-4">
-       <div class="embed-responsive">
-         {/* <img class="card-img-top embed-responsive-item" src={item.labels.icon} /> */}
+        <div className="card">
+       <div className="embed-responsive">
+         <img src={'https://via.placeholder.com/256'} />
      </div>
-     <div class="card-block">
-         <h4 class="card-title">{item.name}</h4>
-         <p class="card-text">{item.style.shortName}</p>
+     <div className="card-block">
+         <h4 className="card-title">{item.name}</h4>
+         <p className="card-text">{item.style.shortName}</p>
        </div>
      </div>
       )
@@ -83,3 +85,13 @@ const BeerItem = ({ item }) => {
 };
 
 export default BeerItem;
+
+
+// if (item.breweries) {
+//   const regions = item.breweries[0].locations.map(
+//     (location) => location.region
+//   );
+//   console.log(regions);
+// } else { 
+//   console.log("nope");
+// }
