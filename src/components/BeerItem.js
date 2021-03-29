@@ -57,9 +57,9 @@ const BeerItem = ({ item }) => {
         //     </div>
         //   </div>
         // </div>
-        <div>
+        <div style={{width: '200px', display: 'inline-block'}}>
           <Card>
-            <CardImg top width='200px' src={item.labels.medium}/>
+            <CardImg top width='200px' height='auto' src={item.labels.medium}/>
             <CardBody>
               <CardTitle tag='h3'>{item.name}</CardTitle>
               <CardSubtitle>{item.style.shortName}</CardSubtitle>

@@ -9,8 +9,8 @@ export default class BeerLocator extends Component {
 
     // populateOptions(props) {
     //     return this.populateOptions.map((option, index) => (
-    //         <option key={id}
-    //     ))
+    //         <option key={id} value={option}>{option}</option>
+    //     ));
     // }
     render() {
         console.log(this.props)
