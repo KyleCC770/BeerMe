@@ -12,8 +12,11 @@ export default class BeerLocator extends Component {
     //         <option key={id} value={option}>{option}</option>
     //     ));
     // }
+
+    
     render() {
-        console.log(this.props)
+        const styles = this.props.
+        console.log('heres props ' + this.props)
         return (
             <>
                 <Form>
@@ -27,3 +30,21 @@ export default class BeerLocator extends Component {
         )
     }
 }
+
+
+
+// const BeerLocator = ({ item }) => {
+//     console.log('heres props:' + item);
+//     // console.log(item.style)
+//     // console.log(item.name);
+//     // console.log(item.labels);
+  
+//         return (
+//           <div style={{width: '200px', display: 'inline-block'}}>
+            
+//           </div>
+//         );
+  
+//   };
+  
+//   export default BeerLocator;
