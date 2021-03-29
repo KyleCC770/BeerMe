@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navigation from './NavigationComponent';
 import Home from './HomeComponent';
 import Beer from './BeerComponent';
+import BeerLocator from './BeerLocator';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import axios from 'axios';
 
@@ -28,6 +29,7 @@ const Main = () => {
       <Switch>
         <Route path="/home" component={Home} />
         <Route exact path="/beer" render={() => <Beer isLoading={isLoading} items={items} />} />
+        <Route exact path="/locator" render={() => <BeerLocator isLoading={isLoading} items={items} />} />
         <Redirect to="/home" />
       </Switch>
     </div>

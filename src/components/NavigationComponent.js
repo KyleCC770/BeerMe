@@ -38,8 +38,8 @@ class Navigation extends Component {
               </NavLink>
             </NavItem>{" "}
             <NavItem className="navSpaced">
-              <NavLink className="nav-link" to="/home">
-                Beer Locater
+              <NavLink className="nav-link" to="/locator">
+                Beer Locator
               </NavLink>
             </NavItem>{" "}
             <NavItem className="navSpaced">
