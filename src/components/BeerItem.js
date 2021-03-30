@@ -4,8 +4,22 @@ import { Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText} from 'react
 const BeerItem = ({ item }) => {
   // console.log('heres props:' + item);
   // console.log(item.style)
-  console.log(item.name);
-  console.log(item.labels);
+  // console.log(item.name);
+  // console.log(item.labels);
+
+  const locations = []
+
+  if (item.breweries) {
+  const regions = item.breweries[0].locations.map(
+    (location) => location.region
+  );
+  regions.concat(locations)
+  console.log(regions);
+} else {
+  console.log("nope");
+}
+
+console.log('heres locations: '+ locations)
 
       return (
         <div style={{width: '200px', display: 'inline-block'}}>
