@@ -28,7 +28,7 @@ console.log('heres locations: '+ locations)
             <CardBody>
               <CardTitle tag='h3'>{item.name}</CardTitle>
               <CardSubtitle>{item.style ? item.style.shortName : 'style undefined'}</CardSubtitle>
-              <CardText></CardText>
+              <CardText>{locations}</CardText>
             </CardBody>
           </Card>
         </div>
